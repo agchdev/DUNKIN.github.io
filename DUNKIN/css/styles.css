@@ -1,0 +1,1343 @@
+@font-face {
+    font-family: "RockoFLF-Bold";
+    src: url("../fonts/RockoFLF/RockoFLF-Bold.ttf");
+}
+@font-face {
+    font-family: "RockoFLF";
+    src: url("../fonts/RockoFLF/RockoFLF.ttf");
+}
+@font-face {
+    font-family: "RockoUltraFLF-Bold";
+    src: url("../fonts/RockoFLF/RockoUltraFLF-Bold.ttf");
+}
+@font-face {
+    font-family: "RockoUltraFLF";
+    src: url("../fonts/RockoFLF/RockoUltraFLF.ttf");
+}
+@font-face {
+    font-family: "Dunkisans";
+    src: url("../fonts/DunkinSans-Display.woff");
+}
+
+
+a{
+    text-decoration: none;
+    color: white;
+}
+
+/*NAVEGADOR*/
+#nav{
+    display: flex;
+    justify-content: space-around;
+    align-items: center ;
+    background-color: #FCE9D3;
+}
+#nav > div{
+    width: 50%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-family: "RockoFLF-Bold";
+}
+#nav > div > a{
+    color:#FF8AA4;
+    font-size: 1.5rem;
+    padding: 2rem 9rem;
+    transition: all .5s ease;
+}
+#nav > div > a:hover{
+    background-color: #FF8AA4;
+    color: white;
+}
+.now{
+    max-width: 100%;
+    padding: 1rem 2rem;
+    border-radius: 2rem;
+    font-size: 1.5rem;
+    background-color: #6db9ff;
+    font-family: "RockoFLF-Bold";
+    transition: all .5s ease;
+}
+.now:hover{
+    background-color: #a4d3ff;
+}
+@media screen and (max-width: 1200px){
+    #nav{
+        display: flex;
+        flex-direction: column;
+    }
+    #nav > a{
+        margin: 2rem;
+    }
+    #nav > div > a{
+        padding: 2rem 10rem;
+    }
+}
+@media screen and (max-width: 992px){
+    #nav > div > a{
+        padding: 2rem 7.75rem;
+    }
+}
+@media screen and (max-width: 768px){
+    #nav > div > a{
+        padding: 2rem 6rem;
+    }
+}
+@media screen and (max-width: 576px){
+    #nav > div > a{
+        padding: 2rem 3.4rem;
+    }
+}
+/*PARRALAX BANNER 1*/
+#parallax{
+    background: url(../img/1811x943_slider_web_sobremesa_cuqui_2024_v1.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    height: 80vh;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+}
+#parallax > div{
+    width: 50%;
+    color: white;
+    text-align: center;
+}
+#parallax > div > h2{
+    font-family: "Dunkisans";
+}
+#parallax > div > h2:nth-child(1){
+    font-size: 4rem;
+    color: #F1EDDB;
+}
+#parallax > div > h2:nth-child(2){
+    font-size: 10rem;
+    color: #3B342F;
+}
+#parallax > div > a{
+    display: inline-block;
+    margin-top: 2rem;
+    font-family: "RockoFLF-Bold";
+    padding: 1.5rem 4rem;
+    background-color:#3B342F;
+    color: #F1EDDB;
+    font-size: 1.5rem;
+    border-radius: 2rem;
+    transition: all .5s ease;
+}
+#parallax > div > a:hover{
+    background-color:#F1EDDB;
+    color: #3B342F; 
+}
+@media screen and (max-width: 768px){
+    #parallax{
+        background-position-x:-500px;
+    }
+}
+@media screen and (max-width: 576px){
+    #parallax{
+        justify-content: center;
+    }
+    #parallax > div{
+        width: 100%;
+    }
+    #parallax > div > h2:nth-child(1){
+        font-size: 3rem;
+        color: #F1EDDB;
+    }
+    #parallax > div > h2:nth-child(2){
+        font-size: 7rem;
+        color: #3B342F;
+    }
+    #parallax > div > a{
+        margin-top: 1rem;
+        font-size: 2rem;
+        padding: .8rem 2rem;
+    }
+}
+/*TEXTOS DE DONUTS*/
+#dunkipers{
+    display: flex;
+}
+#dunkipers > div{
+    padding: 5rem;
+}
+#dunkipers > div:nth-child(1){
+    width: 60%;
+    background-color: #FBF1EE;
+}
+
+#dunkipers > div:nth-child(1) > img{
+    width: 33%;
+}
+#dunkipers > div:nth-child(2){
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-family: "Dunkisans";
+    background-color: #FF8AA4;
+}
+#dunkipers > div:nth-child(2) > h2{
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+#dunkipers > div:nth-child(2) > p{
+    font-family: Arial, Helvetica, sans-serif;
+    width: 80%;
+    line-height: 1.5rem;
+    margin-bottom: 1.5rem;
+}
+#dunkipers > div:nth-child(2) > a{
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.5rem;
+    color: #3B342F;
+    padding: .5rem 1rem;
+    border: 1px solid #3B342F;
+    transition: all .5s ease;
+}
+#dunkipers > div:nth-child(2) > a:hover{
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.5rem;
+    color: white;
+    background-color: #3B342F;
+    padding: .5rem 1rem;
+    border: 1px solid #3B342F;
+}
+@media screen and (max-width: 1200px){
+    #dunkipers > div:nth-child(1) > img{
+        width: 30%;
+    }
+    #dunkipers > div:nth-child(1){
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        max-width: 100%;
+    }
+}
+@media screen and (max-width: 992px){
+    #dunkipers > div{
+        padding: 3rem;
+    }
+}
+@media screen and (max-width: 768px){
+    #dunkipers{
+        flex-direction: column;
+    }
+    #dunkipers > div{
+        padding: 5rem 0;
+    }
+    #dunkipers > div:nth-child(1){
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        max-width: 100%;
+    }
+    #dunkipers > div:nth-child(1) > img{
+        width: 25%;
+    }
+    #dunkipers > div:nth-child(2){
+        width: 100%;
+        
+    }
+}
+/*PRODUCTOSAPP*/
+#productosApp{
+    display: flex;
+}
+#productosApp > div:nth-child(1){
+    background-color: #FCE9D3;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #412207;
+    text-align: center;
+    padding: 6rem 0;
+    width: 100%;
+}
+#productosApp > div:nth-child(1) > h2{
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+    font-family: "Dunkisans";
+    width: 60%;
+}
+#productosApp > div:nth-child(1) > p{
+    width: 55%;
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.5rem;
+    margin-bottom: 1.5rem;
+}
+#productosApp > div:nth-child(1) > div{
+    display: flex;
+    gap: 2rem;
+    justify-content: center;
+}
+#productosApp > div:nth-child(1) > div > a{
+    width: 70%;
+    transition: all .5s ease;
+}
+#productosApp > div:nth-child(1) > div > a:hover{
+    width: 100%;
+}
+#productosApp > div:nth-child(1) > div > a > img{
+    max-width: 100%;
+}
+#productosApp > div:nth-child(2){
+    background-image: url(../img/app.png);
+    width: 100%;
+    background-position: start;
+    background-size: cover;
+}
+@media screen and (max-width: 768px){
+    #productosApp{
+        flex-direction: column-reverse;
+    }
+    #productosApp > div:nth-child(2){
+        background-image: url(../img/app.png);
+        height: 50vh;
+        background-position: center;
+        background-size: cover;
+    }
+}
+/*DONDE TOMAR*/
+#dondetomar{
+    display:flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    background: url(../img/1920x1080_noticia_web_fresa_platano_v1.jpg);
+    background-size: cover;
+    background-position: end;
+    background-attachment: fixed;
+    padding: 5rem 4rem;
+}
+#dondetomar > h2{
+    font-size: 4rem;
+    margin-bottom: 5rem;
+    font-family: "Dunkisans";
+    color: white;
+    text-transform: uppercase;
+}
+#dondetomar > h2 span{
+    font-size: 7rem;
+    margin-bottom: 5rem;
+    font-family: "Dunkisans";
+    color: white;
+    text-transform: uppercase;
+}
+#dondetomar > div{
+    display:flex;
+    justify-content: space-around;
+    align-items: center;
+}
+#dondetomar > div > div{
+    padding: 4rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    width: 30%;
+    margin: auto;
+    border-radius: 2rem;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.423);
+    text-align: center;
+}
+#dondetomar > div > div > a{
+    width: 50%;
+    transition: all .5s ease;
+}
+#dondetomar > div > div > a > img{
+    max-width: 100%;
+}
+#dondetomar > div > div > a:hover{
+    width: 60%;
+}
+#dondetomar > div > div > h2{
+    font-size: 4rem;
+    margin-bottom: 1rem;
+    font-family: "Dunkisans";
+    color: #412207;
+}
+#dondetomar > div > div > p{
+    margin: 2.5rem 0;
+    font-size: 1.5rem;
+}
+@media screen and (max-width: 992px){
+    #dondetomar > div > div:nth-child(2) > h2{
+        font-size: 3rem;
+    }
+}
+@media screen and (max-width: 768px){
+    #dondetomar > div{
+        flex-direction: column;
+    }
+    #dondetomar > div > div{
+        width: 80%;
+        margin-bottom: 3rem;
+    }
+}
+@media screen and (max-width: 576px){
+    #dondetomar > div > div{
+        max-width: 100%;
+        padding: 5rem 2rem;
+    }
+    #dondetomar > h2{
+        text-align: center;
+        font-size: 2rem;
+        margin-bottom: 2rem;
+    }
+    #dondetomar > h2 span{
+        font-size: 3rem;
+        margin-bottom: 2rem;
+    }
+    #dondetomar > div > div > h2{
+        display: none;
+    }
+    #dondetomar > div > div > p{
+        display: none;
+    }
+    #dondetomar > div > div > a{
+        width: 80%;
+        transition: all .5s ease;
+    }
+    #dondetomar > div > div > a:hover{
+        width: 90%;
+    }
+}
+#noticias{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 5rem;
+    background-color: whitesmoke;
+}
+#noticias > h2{
+    font-size: 2rem;
+    font-family: "Dunkisans";
+    margin-bottom: 3rem;
+    text-transform: uppercase;  
+    color: #412207;
+}
+#noticias > div {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+#noticias > div > div{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    width: 23%;
+    margin: auto;
+    transition: all .5s ease;
+}
+#noticias > div > div > a:nth-child(2){
+    color: black;
+}
+#noticias > div > div > a > img{
+    max-width: 100%;
+    border-radius: 2rem;
+    box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.274);
+}
+#noticias > div > div:hover{
+    width: 20%;
+    filter: brightness(70%)
+}
+@media screen and (max-width: 1200px){
+    #noticias > div > div{
+        width: 45%;
+        margin-bottom: 2rem;
+    }
+    #noticias > div > div:hover{
+        width: 40%;
+        filter: brightness(70%)
+    }
+}
+
+@media screen and (max-width: 576px){
+    #noticias > div > div > a > img{
+        border-radius: 1rem;
+    }
+}
+
+/*CAFES DE EXCLUSIVA*/
+
+#cafesito{
+    display: flex;
+}
+#cafesito > div{
+    padding: 5rem;
+}
+#cafesito > div:nth-child(1){
+    width: 60%;
+    background-color: #FBF1EE;
+}
+
+#cafesito > div:nth-child(1) > img{
+    width: 33%;
+}
+#cafesito > div:nth-child(2){
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-family: "Dunkisans";
+    background-color: #ff9869;
+}
+#cafesito > div:nth-child(2) > h2{
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+#cafesito > div:nth-child(2) > p{
+    font-family: Arial, Helvetica, sans-serif;
+    width: 80%;
+    line-height: 1.5rem;
+    margin-bottom: 1.5rem;
+}
+#cafesito > div:nth-child(2) > a{
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.5rem;
+    color: #3B342F;
+    padding: .5rem 1rem;
+    border: 1px solid #3B342F;
+    transition: all .5s ease;
+}
+#cafesito > div:nth-child(2) > a:hover{
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.5rem;
+    color: white;
+    background-color: #3B342F;
+    padding: .5rem 1rem;
+    border: 1px solid #3B342F;
+}
+@media screen and (max-width: 1200px){
+    #cafesito > div:nth-child(1) > img{
+        width: 30%;
+    }
+    #cafesito > div:nth-child(1){
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        max-width: 100%;
+    }
+}
+@media screen and (max-width: 992px){
+    #cafesito > div{
+        padding: 3rem;
+    }
+}
+@media screen and (max-width: 768px){
+    #cafesito{
+        flex-direction: column;
+    }
+    #cafesito > div{
+        padding: 5rem 0;
+    }
+    #cafesito > div:nth-child(1){
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        max-width: 100%;
+    }
+    #cafesito > div:nth-child(1) > img{
+        width: 25%;
+    }
+    #cafesito > div:nth-child(2){
+        width: 100%;
+        
+    }
+}
+
+/*PARTE DE LA PAGINA 2*/
+
+#carta-donuts{
+    display: flex;
+    flex-direction: column;
+    background-attachment: fixed;
+
+}
+#carta-donuts > div:nth-child(1){
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #a4d3ff;
+    padding: 1rem 0rem;
+}
+#carta-donuts > div:nth-child(1) > h2{
+    font-family: "Dunkisans";
+    font-size: 3rem;
+    color: white;
+}
+#carta-donuts > div:nth-child(1) > input{
+    border-radius: 1rem;
+    padding: .5rem 1rem;
+}
+#carta-donuts > div:nth-child(1) > div{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+#carta-donuts > div:nth-child(1) > div > div > a{
+    filter: contrast(100px);
+}
+#carta-donuts > div:nth-child(1) > div > a{
+    color: white;
+    font-family: "RockoFLF-Bold";
+    font-size: 1rem;
+}
+#carta-donuts > div:nth-child(1) > div > a{
+    font-size: 1.5rem;
+    width: 100%;
+}
+#carta-donuts > div:nth-child(1) > div > a >img{
+    max-width: 100%;
+    
+}
+#carta-donuts > div:nth-child(2){
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    width: 80%;
+    margin: 3rem auto;
+}
+.article{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+    width: 20%;
+    max-width: 100%;
+    background-color: white;
+    border-radius: 3rem;
+    margin: 1rem;
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.233);
+}
+.article > img{
+    max-width: 100%;
+}
+.article > a{
+    background-color: #EE7D00;
+    color: white;
+    padding: .5rem 1rem;
+    border-radius: 1rem;
+    font-family: "RockoFLF-Bold";
+    margin-bottom: 1rem;
+    transition: all .5s ease-out;
+}
+.article > a:hover{
+    background-color: #a15600;
+    padding: 1rem 1.5rem;
+    border-radius: 1.5rem;
+    
+}
+
+/*PERSONALIZA TU DONUT!!*/
+
+#donuts-recomendacion{
+    height: 60vh;
+    background-position: center;
+    background: url(../img/1920x1080_bgdonuts.jpg);
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#donuts-recomendacion > div{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    background-color: #ff8aa33b;
+    backdrop-filter: blur(7px);
+    padding: 2rem;
+    border-radius: 2rem;
+    width: 50%;
+}
+#donuts-recomendacion > div > h2{
+    margin-bottom: 1rem;
+    font-family: 'Dunkisans';
+    font-size: 3rem;
+    width: 90%;
+    color: white;
+}
+#donuts-recomendacion > div > p{
+    color:  #fff3f5;
+    font-family: "RockoFLF";
+    font-size: 1.5rem;
+}
+#donuts-recomendacion > div > a{
+    padding: 1rem 1.5rem;
+    background-color: #FF8AA4;
+    border-radius: 2rem;
+    margin: 2rem 0;
+    font-size: 2rem;
+    font-family: 'Dunkisans';
+    transition: all .5s ease-out;
+}
+#donuts-recomendacion > div > a:hover{
+    background-color: white;
+    color: #FF8AA4;
+}
+@media screen and (max-width: 1200px){
+    .article{
+        width: 25%;
+    }
+    #carta-donuts > div:nth-child(2){
+        margin: 3rem auto
+    }
+}
+@media screen and (max-width: 992px){
+    .article{
+        width: 40%;
+    }
+}
+@media screen and (max-width: 768px){
+    .article{
+        width: 40%;
+    }
+}
+@media screen and (max-width: 576px){
+    .article{
+        width: 40%;
+        margin: .5rem 0;
+        border-radius: .7rem;
+    }
+    .article > img{
+        max-width: 100%;
+        width: 50%;
+        
+    }
+    .article > a{
+        text-align: center;
+        font-size: .5rem;
+        padding: .2rem .5rem;
+    }
+    .article > a:hover{
+        text-align: center;
+        font-size: .5rem;
+        padding: .3rem .6rem;
+    }
+    #donuts-recomendacion{
+        height: 40vh;
+    }
+    #donuts-recomendacion > div > h2{
+        font-size: 1.5rem;
+    }
+    #donuts-recomendacion > div > p{
+        font-size: 1rem;
+    }
+    #donuts-recomendacion > div > a{
+        padding: .5rem 1rem;
+        background-color: #FF8AA4;
+        border-radius: 2rem;
+        margin: 1rem 0;
+        font-size: 1.5rem;
+    }
+}
+
+/*CONTACTO*/
+
+#contacto{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 80vh;
+    background: url(../img/slider_web_sobremesa_dark_cherry_1811x943px.jpg);
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+}
+#contacto > h2{
+    font-size: 3rem;
+    margin-bottom: 2rem;
+    font-family: 'Dunkisans';
+    color: white;
+}
+#formDunki{
+    border-radius: 2rem;
+    background-color: #ffa2b671;
+    padding: 3rem;
+    display: flex;
+    flex-direction: column;
+    box-shadow:  0 10px 15px rgba(0, 0, 0, 0.187);
+    backdrop-filter: blur(10px);
+}
+.dunkitem{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1rem;
+}
+.dunkitem > div{
+    display: flex;
+    justify-content: end;
+    align-items: center;
+}
+.inputform{
+    padding: 1rem;
+    border: 0;
+    border-radius: 2rem;
+}
+.labelform{
+    font-family: "RockoFLF-Bold";
+    color: white;
+}
+.tlf:nth-child(1){
+    padding: .95rem;
+    border: 0;
+    border-radius: 2rem 0  0 2rem; 
+    background-color: rgb(211, 211, 211);
+}
+.tlf:nth-child(2){
+    padding: 1rem;
+    border: 0;
+    border-radius: 0 2rem  2rem 0; 
+    width: 30%;
+}
+.enviar{
+    padding: 1rem;
+    font-family: "RockoFLF-Bold";
+    border: 0;
+    margin: auto;
+    width: 50%;
+    border-radius: 2rem;
+}
+.enviar:hover{
+    padding: 1rem;
+    font-family: "RockoFLF-Bold";
+    background-color: #E6378C;
+    color: white;
+    border: 0;
+    margin: auto;
+    width: 50%;
+    border-radius: 2rem;
+}
+@media screen and (max-width: 768px){
+    #contacto{
+        background-position: -700px 0;
+    }
+    #contacto > h2{
+        color: white;
+    }
+    
+}
+@media screen and (max-width: 576px){
+    #contacto{
+        background-position: -700px 0;
+    }
+}
+/*VAMOS A POR LA CUARTA PAGINA VAMOOOOOOS!!!!*/
+#ultimas-noticias{
+    width: 80%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    backdrop-filter: blur(10px);
+    background-color: rgba(255, 255, 255, 0.18);
+}
+.text{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+.text > h2{
+    font-family: 'Dunkisans';
+    font-size: 3rem;
+    margin-bottom: 1rem;
+    color: white;
+}
+.text > p{
+    color: white;
+    width: 60%;
+    font-family: "RockoFLF";
+}
+.imagencill{
+    width: 50%;
+}
+.imagencilla > img{
+    max-width: 100%;
+}
+.bg-ultimasnoticias{
+    background: url(../img/bgultimasnoticias.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    background-position-y: -150px;
+    padding: 7rem 0;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+@media screen and (max-width: 1200px){
+    .text > h2{
+        font-size: 2rem;
+    }
+    .bg-ultimasnoticias{
+        background-position-y: 0px;
+        background-position-x: -220px;
+    }
+}
+@media screen and (max-width: 768px){
+    #ultimas-noticias{
+        grid-template-columns: 1fr 1fr;
+    }
+    .imagencilla:nth-child(9){
+        display: none;
+    }
+}
+@media screen and (max-width: 576px){
+    #ultimas-noticias{
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    }
+}
+#preguntas{
+    background: url(../img/1920x1080_bgdonuts.jpg);
+    background-size: cover;
+    background-position: center;
+    padding: 4rem 0;
+}
+#preguntas h2{
+    padding-top: 2rem 0 0 0;
+}
+#preguntas > div{
+    background-color: #ffa2b671;
+    backdrop-filter: blur(5px);
+    color: rgb(255, 255, 255);
+    border-radius:3rem;
+    box-shadow:  0 10px 15px rgba(0, 0, 0, 0.187);
+}
+#preguntas div{
+    margin: auto;
+    width: 68%;
+    padding: 3rem 0;
+}
+#preguntas p{
+    width: 100%;
+    font-family: "RockoFLF-Bold";
+}
+#preguntas > div > div > h2{
+    text-align: center;
+    font-size: 3rem;
+    font-family: 'Dunkisans';
+}
+#preguntas summary{
+    font-family: "RockoFLF-Bold";
+    font-size: 1.5rem;
+    list-style: none;
+    color: white;
+}
+#preguntas a{
+    text-decoration: none;
+    color: white;
+}
+#preguntas a:hover{
+    color: white;
+}
+details{
+    margin-top: 1rem;
+    transition: height 1s ease;
+    overflow: hidden;
+    
+}
+
+details:not([open])
+{
+    height: 3.25em;
+}
+.a[open]
+{
+    height: 8em;
+}
+.b[open]
+{
+    height: 9em;
+}
+.c[open]
+{
+    height: 8em;
+}
+.d[open]
+{
+    height: 7em;
+}
+.e[open]
+{
+    height: 8em;
+}
+.f[open]
+{
+    height: 9em;
+}
+#preguntas hr{
+    border: 0.1px solid white;
+    margin-top: 1rem;
+}
+@media screen and (max-width: 1200px){
+    details:nth-child(2)
+    {
+        height: 5.25em;
+    }
+}
+@media screen and (max-width: 768px){
+
+}
+@media screen and (max-width: 576px){
+
+}
+/*CRUASANES RICOOOOS*/
+
+#carta-cruasan{
+    display: flex;
+    flex-direction: column;
+    background-attachment: fixed;
+
+}
+#carta-cruasan > div:nth-child(1){
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #a4d3ff;
+    padding: 1rem 0rem;
+}
+#carta-cruasan > div:nth-child(1) > h2{
+    font-family: "Dunkisans";
+    font-size: 3rem;
+    color: white;
+}
+#carta-cruasan > div:nth-child(1) > input{
+    border-radius: 1rem;
+    padding: .5rem 1rem;
+}
+#carta-donuts > div:nth-child(1) > div{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+#carta-cruasan > div:nth-child(1) > div > div > a{
+    filter: contrast(100px);
+}
+#carta-cruasan > div:nth-child(1) > div > a{
+    color: white;
+    font-family: "RockoFLF-Bold";
+    font-size: 1rem;
+}
+#carta-cruasan > div:nth-child(1) > div > a{
+    font-size: 1.5rem;
+    width: 100%;
+}
+#carta-cruasan > div:nth-child(1) > div > a >img{
+    max-width: 100%;
+    
+}
+#carta-cruasan > div:nth-child(2){
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    width: 80%;
+    margin: 3rem auto;
+}
+
+/*PERSONALIZA TU DONUT!!*/
+
+#cruasan-recomendacion{
+    height: 60vh;
+    background-position: center;
+    background: url(../img/bgcruasan.jpg);
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#cruasan-recomendacion > div{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    background-color: #ffde8a3b;
+    backdrop-filter: blur(7px);
+    padding: 2rem;
+    border-radius: 2rem;
+    width: 50%;
+}
+#cruasan-recomendacion > div > h2{
+    margin-bottom: 1rem;
+    font-family: 'Dunkisans';
+    font-size: 3rem;
+    width: 90%;
+    color: white;
+}
+#cruasan-recomendacion > div > p{
+    color:  #fff3f5;
+    font-family: "RockoFLF";
+    font-size: 1.5rem;
+}
+#cruasan-recomendacion > div > a{
+    padding: 1rem 1.5rem;
+    background-color: #ff993f;
+    border-radius: 2rem;
+    margin: 2rem 0;
+    font-size: 2rem;
+    font-family: 'Dunkisans';
+    transition: all .5s ease-out;
+}
+#cruasan-recomendacion > div > a:hover{
+    background-color: white;
+    color: #ff993f;
+}
+@media screen and (max-width: 1200px){
+    .article{
+        width: 25%;
+    }
+    #carta-donuts > div:nth-child(2){
+        margin: 3rem auto
+    }
+}
+@media screen and (max-width: 992px){
+    .article{
+        width: 40%;
+    }
+}
+@media screen and (max-width: 768px){
+    .article{
+        width: 40%;
+    }
+}
+@media screen and (max-width: 576px){
+    .article{
+        width: 40%;
+        margin: .5rem 0;
+        border-radius: .7rem;
+    }
+    .article > img{
+        max-width: 100%;
+        width: 50%;
+        
+    }
+    .article > a{
+        text-align: center;
+        font-size: .5rem;
+        padding: .2rem .5rem;
+    }
+    .article > a:hover{
+        text-align: center;
+        font-size: .5rem;
+        padding: .3rem .6rem;
+    }
+    #cruasan-recomendacion{
+        height: 40vh;
+    }
+    #cruasan-recomendacion > div > h2{
+        font-size: 1.5rem;
+    }
+    #cruasan-recomendacion > div > p{
+        font-size: 1rem;
+    }
+    #cruasan-recomendacion > div > a{
+        padding: .5rem 1rem;
+        background-color: #FF8AA4;
+        border-radius: 2rem;
+        margin: 1rem 0;
+        font-size: 1.5rem;
+    }
+}
+/*FOOTER*/
+
+footer > div{
+    display: flex;
+    flex-wrap: wrap;
+    padding: 3rem;
+    justify-content: space-around;
+    background-color:#FCE9D3;
+}
+footer > div:nth-child(1){
+    display: flex;
+    flex-wrap: wrap;
+    padding: 3rem 3rem 0rem ;
+    justify-content: space-around;
+    background-color:#FCE9D3;
+}
+footer > div > div{
+    margin: auto;
+    width: 20%;
+    display: flex;
+    justify-content: start;
+    flex-direction: column;
+}
+footer > div > div > h3{
+    color: #EE7D00;
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    display: inline-block;
+    font-family: "RockoFLF-Bold";
+}
+footer > div > div > a{
+    color: #E6378C;
+    margin-bottom: 1rem;
+    display: inline-block;
+    font-family: "RockoFLF-Bold";
+    transition: all .5s ease;
+}
+footer > div > div > a:hover{
+    color: #bb2b71;
+    margin-bottom: 1rem;
+    display: inline-block;
+    font-family: "RockoFLF-Bold";
+}
+footer > div > div > img{
+    display: inline-block;
+}
+@media screen and (max-width: 576px){
+    footer > div:nth-child(2){
+        display: flex;
+        flex-wrap: wrap;
+    }
+    footer > div > div{
+        margin: auto;
+        width: 50%;
+        flex-wrap: wrap;
+        margin-bottom: 2rem;
+    }
+    
+
+}
+/*PEDIR COMIDA*/
+
+#lugar{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+    margin: auto;
+    padding: 2rem 0;
+    text-align: center;
+}
+#lugar > div > h2{
+    font-size: 2rem;
+    font-family: 'Dunkisans'; 
+    color: #EE7D00;
+}
+#lugar > div > p{
+    font-size: 1rem;
+    font-family: "RockoFLF-Bold";
+    width: 50%;
+    margin: auto;
+    margin-top: 1rem;
+    color: #E6378C;
+}
+.margintop{
+    display: inline-block;
+    margin-top: 1rem;
+}
+#lugar > div:nth-child(2) > iframe{
+    border-radius: 2rem;
+}
+#pide{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: url(../img/1920x1080_bgdonuts.jpg);
+    background-size: cover;
+    height: 50vh;
+    background-position: center;
+}
+#pide > div{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(255, 255, 255, 0.166);
+    padding: 5rem 2rem;
+    backdrop-filter: blur(10px);
+    border-radius: 2rem;
+    box-shadow:  0 10px 15px rgba(0, 0, 0, 0.187);
+}
+#pide > div > h3{
+    font-size: 2rem;
+    font-family: 'Dunkisans'; 
+    color: green;
+    margin-bottom: 1rem;
+}
+#pide > div > p{
+    font-size: 1rem;
+    font-family: "RockoFLF-Bold";
+    color: green;
+    text-align: center;
+}
+.verde{
+    background-color: green;
+}
+.verde:hover{
+    background-color: white;
+    color: green;
+}
+@media screen and (max-width: 1200px){
+    #lugar{
+        flex-direction: column;
+        gap: 2rem;
+    }
+}
+@media screen and (max-width: 992px){
+    #lugar > div > p{
+        width: 80%;
+    }
+}
+@media screen and (max-width: 768px){
+    #pide > div{
+        width: 80%;
+    }
+}
+@media screen and (max-width: 576px){
+    iframe{
+       max-width: 100%;
+    }
+}
+/*Mantenimiento*/
+
+.MANTENIMIENTO{
+    font-family: 'Dunkisans';
+    height: 80vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.MANTENIMIENTO > h3{
+    font-size: 5rem;
+}
+.MANTENIMIENTO > img{
+    width: 4%;
+}
+@media screen and (max-width: 1200px){
+    .MANTENIMIENTO > h3{
+        font-size: 3rem;
+    }
+}
+@media screen and (max-width: 765px){
+    .MANTENIMIENTO > h3{
+        font-size: 2rem;
+    }
+}
+@media screen and (max-width: 576px){
+    .MANTENIMIENTO > h3{
+        font-size: 1rem;
+    }
+}

@@ -1,0 +1,9 @@
+web 1: https://www.bigboy.com/
+web 2: https://knoweats.com/
+web 3: https://www.dunkin.es/
+
+amarillo: #FCE9D3
+rosa: #FF8AA4
+azul: #D7E8F8
+
+menu: https://codepen.io/EduardL/pen/jObzJB
