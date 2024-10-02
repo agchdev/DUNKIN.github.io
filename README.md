@@ -17,7 +17,7 @@ El proyecto consiste en una recreación visual de la web de Dunkin' Donuts, enfo
   
 ## 💻 Tecnologías Utilizadas
 
-- **HTML/CSS/JS**: Para la estructura, estilo y comportamiento básico del sitio.
+- **HTML/CSS**: Para la estructura, estilo y comportamiento básico del sitio.
 - **Illustrator/Photoshop**: Para la creación de las ilustraciones y gráficos.
 - **Figma**: Herramienta para diseñar el prototipo del sitio antes de implementarlo.
 
